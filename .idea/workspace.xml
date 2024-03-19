@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e25a136-d38d-4522-8810-d5d31b20c312" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/PaqueteUtil/PredicateExp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Streams/ConstructorsStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Streams/ConstructorsStreams.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +55,7 @@
       <recent name="C:\Users\Cristian Buitrago\Desktop\generics\SuperStreams\src\main\java\LambdasPractico\ReadFile" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConstructorsStreams">
+  <component name="RunManager" selected="Application.PredicateExp">
     <configuration name="ArbitraryMethodReference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RererenciasMetodos.ArbitraryMethodReference" />
       <module name="SuperStreams" />
@@ -93,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StaticMethodReference_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RererenciasMetodos.StaticMethodReference_2" />
+    <configuration name="PredicateExp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PaqueteUtil.PredicateExp" />
       <module name="SuperStreams" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="RererenciasMetodos.*" />
+          <option name="PATTERN" value="PaqueteUtil.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PredicateExp" />
         <item itemvalue="Application.ConstructorsStreams" />
         <item itemvalue="Application.StreamFinalOperators" />
         <item itemvalue="Application.ArbitraryMethodReference" />
         <item itemvalue="Application.ConstructorMethodReference" />
-        <item itemvalue="Application.StaticMethodReference_2" />
       </list>
     </recent_temporary>
   </component>
@@ -143,6 +145,7 @@
       <workItem from="1710700384349" duration="2954000" />
       <workItem from="1710854348071" duration="2050000" />
       <workItem from="1710856486100" duration="7000" />
+      <workItem from="1710856755309" duration="3457000" />
     </task>
     <servers />
   </component>

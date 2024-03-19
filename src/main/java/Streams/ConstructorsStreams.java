@@ -12,14 +12,9 @@ public class ConstructorsStreams {
 
     public static void main(String[] args) {
         Stream<VideoGame> vgStream = DataBase.VideoGames.stream();
-        //copiar en jsoneditoronline.org
-        //vgStream.forEach(System.out::println);
-        //trabajar como una lista tradicional
-        //Integer[] myArray={1,2,3,4,5,6,7};
-        //Stream<Integer> intStream = (Stream<Integer>) Arrays.stream(myArray);
-        //intStream.forEach(System.out::println);
 
-        countOperator(vgStream);
+        //countOperator(vgStream);
+        anyMatchOperator(vgStream);
 
 
     }
@@ -35,6 +30,13 @@ public class ConstructorsStreams {
         System.out.println(r);
     }
 
+
+    public static void allMatchOperator(
+            Stream<VideoGame> stream
+    ){
+        boolean r = stream.allMatch(videoGame -> videoGame.getTotalSold()>1000);
+        System.out.println(r);
+    }
 
 
 }
