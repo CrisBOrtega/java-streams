@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e25a136-d38d-4522-8810-d5d31b20c312" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/PaqueteUtil/PredicateExp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Streams/ConstructorsStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Streams/ConstructorsStreams.java" afterDir="false" />
     </list>
@@ -55,7 +54,7 @@
       <recent name="C:\Users\Cristian Buitrago\Desktop\generics\SuperStreams\src\main\java\LambdasPractico\ReadFile" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PredicateExp">
+  <component name="RunManager" selected="Application.ConstructorsStreams">
     <configuration name="ArbitraryMethodReference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RererenciasMetodos.ArbitraryMethodReference" />
       <module name="SuperStreams" />
@@ -123,8 +122,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PredicateExp" />
         <item itemvalue="Application.ConstructorsStreams" />
+        <item itemvalue="Application.PredicateExp" />
         <item itemvalue="Application.StreamFinalOperators" />
         <item itemvalue="Application.ArbitraryMethodReference" />
         <item itemvalue="Application.ConstructorMethodReference" />
@@ -145,7 +144,8 @@
       <workItem from="1710700384349" duration="2954000" />
       <workItem from="1710854348071" duration="2050000" />
       <workItem from="1710856486100" duration="7000" />
-      <workItem from="1710856755309" duration="3457000" />
+      <workItem from="1710856755309" duration="5235000" />
+      <workItem from="1710865901694" duration="1000000" />
     </task>
     <servers />
   </component>
