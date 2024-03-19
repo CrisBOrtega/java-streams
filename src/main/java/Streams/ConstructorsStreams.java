@@ -16,7 +16,8 @@ public class ConstructorsStreams {
 
         //countOperator(vgStream);
         //anyMatchOperator(vgStream);
-        firstOperator(vgStream);
+        //firstOperator(vgStream);
+        reduceOperator(vgStream);
 
 
     }
@@ -48,6 +49,20 @@ public class ConstructorsStreams {
         }else{
             System.out.println("no hay videoj");
         }
+    }
+
+    public static void reduceOperator(Stream<VideoGame> stream){
+        Optional<Integer>  r =  stream.
+                                   filter(v->v.getIsDiscount()).
+                                   map(v->v.getTotalSold()).
+                                   reduce((a,b) -> a+b);
+
+
+        /*Optional<Integer>  r =  stream.
+                filter(VideoGame::getIsDiscount).
+                map(VideoGame::getTotalSold).
+                reduce(Integer::sum);*/
+        System.out.println(r.get());
     }
 
 
