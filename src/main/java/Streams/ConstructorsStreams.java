@@ -4,6 +4,7 @@ import util.DataBase;
 import util.VideoGame;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Optional;
 import java.util.stream.Stream;
 
@@ -17,7 +18,9 @@ public class ConstructorsStreams {
         //countOperator(vgStream);
         //anyMatchOperator(vgStream);
         //firstOperator(vgStream);
-        reduceOperator(vgStream);
+        //reduceOperator(vgStream);
+        //maxOperator(vgStream);
+        minOperator(vgStream);
 
 
     }
@@ -63,6 +66,18 @@ public class ConstructorsStreams {
                 map(VideoGame::getTotalSold).
                 reduce(Integer::sum);*/
         System.out.println(r.get());
+    }
+
+    public static void maxOperator(Stream<VideoGame> stream){
+        //Optional<VideoGame> r = stream.max((a,b)->a.getName().compareTo(b.getName()));
+        Optional<VideoGame> r = stream.max(Comparator.comparing(VideoGame::getPrice));
+        System.out.println(r.get().getName());
+    }
+
+    public static void minOperator(Stream<VideoGame> stream){
+        //Optional<VideoGame> r = stream.max((a,b)->a.getName().compareTo(b.getName()));
+        Optional<VideoGame> r = stream.min((a,b)->a.getPrice().compareTo(b.getPrice()));
+        System.out.println(r.get().getName());
     }
 
 
