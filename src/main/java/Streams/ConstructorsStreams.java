@@ -26,8 +26,8 @@ public class ConstructorsStreams {
         //minOperator(vgStream);
         //distinctOperator(vgStream);
         //limitOperator(vgStream);
-        filterOperator(vgStream);
-
+        //filterOperator(vgStream);
+        mapOperator(vgStream);
 
     }
 
@@ -108,9 +108,23 @@ public class ConstructorsStreams {
 
     public static void mapOperator(Stream<VideoGame> stream){
         //saca los primeros 5 elementos
-        List<VideoGame> st = stream.map(v->{
-            return BasicVideoGame.builde
-        })
+        List<BasicVideoGame> st = stream.map(v->{
+            return BasicVideoGame.builder()
+                    .name(v.getName())
+                    .price(v.getPrice())
+                    .console(v.getConsole())
+                    .build();
+        }).collect(Collectors.toList());
+
+        st.forEach(System.out::println);
+
+        System.out.println("---------------");
+
+        List<String> titulos = st.stream().map( basicVideoGame -> {
+            return basicVideoGame.getName();
+        }).collect(Collectors.toList());
+
+        titulos.forEach(System.out::println);
     }
 
 
