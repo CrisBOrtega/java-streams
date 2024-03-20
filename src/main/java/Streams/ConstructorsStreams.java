@@ -5,7 +5,9 @@ import util.VideoGame;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class ConstructorsStreams {
@@ -20,10 +22,16 @@ public class ConstructorsStreams {
         //firstOperator(vgStream);
         //reduceOperator(vgStream);
         //maxOperator(vgStream);
-        minOperator(vgStream);
+        //minOperator(vgStream);
+        //distinctOperator(vgStream);
+        limitOperator(vgStream);
 
 
     }
+
+    /*
+         operadores finales
+     */
 
     public static void  countOperator(Stream<VideoGame> stream){
         System.out.println(stream.count());
@@ -78,6 +86,20 @@ public class ConstructorsStreams {
         //Optional<VideoGame> r = stream.max((a,b)->a.getName().compareTo(b.getName()));
         Optional<VideoGame> r = stream.min((a,b)->a.getPrice().compareTo(b.getPrice()));
         System.out.println(r.get().getName());
+    }
+
+    /*
+    operadores intermedios
+     */
+
+    public static void distinctOperator(Stream<VideoGame> stream){
+        System.out.println(stream.distinct().count());
+    }
+
+    public static void limitOperator(Stream<VideoGame> stream){
+        //saca los primeros 5 elementos
+        List<VideoGame> st = stream.limit(5).collect(Collectors.toList());
+        st.forEach(System.out::println);
     }
 
 
