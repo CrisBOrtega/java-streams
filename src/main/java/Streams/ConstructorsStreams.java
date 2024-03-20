@@ -1,5 +1,6 @@
 package Streams;
 
+import util.BasicVideoGame;
 import util.DataBase;
 import util.VideoGame;
 
@@ -24,7 +25,8 @@ public class ConstructorsStreams {
         //maxOperator(vgStream);
         //minOperator(vgStream);
         //distinctOperator(vgStream);
-        limitOperator(vgStream);
+        //limitOperator(vgStream);
+        filterOperator(vgStream);
 
 
     }
@@ -96,11 +98,22 @@ public class ConstructorsStreams {
         System.out.println(stream.distinct().count());
     }
 
-    public static void limitOperator(Stream<VideoGame> stream){
+    public static void filterOperator(Stream<VideoGame> stream){
         //saca los primeros 5 elementos
-        List<VideoGame> st = stream.limit(5).collect(Collectors.toList());
+        List<VideoGame> st = stream.filter(v-> v.getPrice() > 50.0)
+                .filter(v->!v.getIsDiscount())
+                .collect(Collectors.toList());
         st.forEach(System.out::println);
     }
+
+    public static void mapOperator(Stream<VideoGame> stream){
+        //saca los primeros 5 elementos
+        List<VideoGame> st = stream.map(v->{
+            return BasicVideoGame.builde
+        })
+    }
+
+
 
 
 
