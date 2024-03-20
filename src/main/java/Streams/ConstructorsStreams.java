@@ -120,9 +120,11 @@ public class ConstructorsStreams {
 
         System.out.println("---------------");
 
-        List<String> titulos = st.stream().map( basicVideoGame -> {
+        /*List<String> titulos = st.stream().map( basicVideoGame -> {
             return basicVideoGame.getName();
         }).collect(Collectors.toList());
+        */
+        List<String> titulos = st.stream().map(BasicVideoGame::getName).collect(Collectors.toList());
 
         titulos.forEach(System.out::println);
     }
