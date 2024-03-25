@@ -27,7 +27,10 @@ public class ConstructorsStreams {
         //distinctOperator(vgStream);
         //limitOperator(vgStream);
         //filterOperator(vgStream);
-        mapOperator(vgStream);
+        //mapOperator(vgStream);
+        //peekOperator(vgStream);
+        //sortOperator(vgStream);
+        takeWhileOperator(vgStream);
 
     }
 
@@ -129,6 +132,29 @@ public class ConstructorsStreams {
         titulos.forEach(System.out::println);
     }
 
+    static void peekOperator(Stream<VideoGame> gr){
+        //similar al foreach pero es intermedia
+        //necesita un iopoerador afinal para maniobrar
+        //gr.peek(System.out::println).collect(Collectors.toList());
+        //peek aplica una operacion sobre el stream pero solo se activa con un operador final
+        gr.peek(v->v.setName("")).forEach(System.out::println);
+    }
+
+    static void sortOperator(Stream<VideoGame> stream){
+        List<VideoGame> sorted =stream.sorted(Comparator.comparingInt(v->v.getReviews().size())).collect(Collectors.toList());
+        System.out.println(sorted);
+    }
+
+    static void takeWhileOperator(Stream<VideoGame> stream){
+        //tahkerwhile: hace todo antes de que se cumpla el
+        //predicado
+        List<VideoGame> sorted =stream
+                .sorted(Comparator.comparing(VideoGame::getName))
+                .takeWhile(v->!v.getName().startsWith("M"))
+                .collect(Collectors.toList());
+
+        sorted.forEach(System.out::println);
+    }
 
 
 

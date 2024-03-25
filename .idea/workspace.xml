@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e25a136-d38d-4522-8810-d5d31b20c312" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Streams/DebugStreamIDE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ejerciciostream/EjerciciosStream.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Streams/ConstructorsStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Streams/ConstructorsStreams.java" afterDir="false" />
     </list>
@@ -54,39 +56,39 @@
       <recent name="C:\Users\Cristian Buitrago\Desktop\generics\SuperStreams\src\main\java\LambdasPractico\ReadFile" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConstructorsStreams">
-    <configuration name="ArbitraryMethodReference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RererenciasMetodos.ArbitraryMethodReference" />
-      <module name="SuperStreams" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RererenciasMetodos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConstructorMethodReference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RererenciasMetodos.ConstructorMethodReference" />
-      <module name="SuperStreams" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RererenciasMetodos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.DebugStreamIDE">
     <configuration name="ConstructorsStreams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Streams.ConstructorsStreams" />
       <module name="SuperStreams" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DebugStreamIDE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Streams.DebugStreamIDE" />
+      <module name="SuperStreams" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EjerciciosStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ejerciciostream.EjerciciosStream" />
+      <module name="SuperStreams" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ejerciciostream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DebugStreamIDE" />
+        <item itemvalue="Application.EjerciciosStream" />
         <item itemvalue="Application.ConstructorsStreams" />
         <item itemvalue="Application.PredicateExp" />
         <item itemvalue="Application.StreamFinalOperators" />
-        <item itemvalue="Application.ArbitraryMethodReference" />
-        <item itemvalue="Application.ConstructorMethodReference" />
       </list>
     </recent_temporary>
   </component>
@@ -148,6 +150,8 @@
       <workItem from="1710865901694" duration="4966000" />
       <workItem from="1710941004214" duration="5000000" />
       <workItem from="1710961599297" duration="2237000" />
+      <workItem from="1710973080356" duration="2167000" />
+      <workItem from="1711302756970" duration="8323000" />
     </task>
     <servers />
   </component>
@@ -164,5 +168,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Streams/DebugStreamIDE.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
